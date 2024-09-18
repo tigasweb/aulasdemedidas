@@ -75,4 +75,115 @@ Quando você quer um tamanho que seja Relativo apenas ao elemento pai específic
 
 Exemplo de Uso:
 
+html
+
+<div class="container">
+
+        <div class="text">
+              <p> Lorem </p>
+        </div>
+
+ </div>    
+
+ css
+
+ html {
+    font-size: 16px; /*Tamanho base da fonte*/
+ }   
+
+ .text {
+    font-size: 2rem; /*32px (2 * 16px)*/
+ }
+
+ -------------------------------------------------------------------------------------
+
+ 4. vh (viewport height)
+
+ Uso recomendado:
+
+ Para definir tamanhos de altura Relativos à altura da viewport, como para criar seções de tela cheia ou elementos que devem ocupar uma porcentagem da altura da tela.
+
+ Ideal para layouts que devem se ajustar à altura da tela do usuário.
+
+ Quando evitar:
+
+ Para elementos que não precisam ser sensíveis ao tamanho da viewport e devem ter tamanhos fixos ou proporcionais ao conteúdo
+
+ Exemplo de Uso: 
+
+ html
+ <section class="fullscreen-section">
+             <p> lorem</p>
+ </section>
+ testar em tamanhos de telas diferentes.
+
+ css
+
+ .fullscreen-section {
+    height: 100vh; /*100% da altura da viewport*/
+    width: 50vw;
+    background-color: black;
+ }            
+
+ -------------------------------------------------------------------------------------
+
+ 5. vw (viewport width)
+
+ Uso recomendado:
+
+ Para definir tamanhos de largura relativo à largura da viewport, útil para criar layouts responsivos ou elementos que devem ajustar a largura da tela.
+
+ Ideal para elementos que precisam ocupar uma porcentagem da largura da tela do usuário.
+
+ Quando evitar:
+
+ Para elementos cuja a largura não deve depender da largura da viewport e deve ser fixa ou proporcional ao conteúdo.
+
+ Exemplo de Uso:
+
+ html
+ <section class="responsive-element">
+               <p> lorem</p>
+ </section>
+
+ css
+
+ .responsive-element {
+    width: 50vw; /*50% da largura da viewport*/
+    height: 50vh; 
+    background-color: yellow;
+
+ }              
+
+--------------------------------------------------------------------------------------
+
+6. % (Percentual)
+
+Uso recomendado:
+
+Para definir tamanhos relativos ao tamanho do elemento pai, ideal para layouts flexiveis e adatáveis.
+Útil para definir larguras e alturas de elementos dentro de containers com tamanhos variaveis.
+
+Quando evitar:
+
+Quando o tamanho não deve depender do elemento pai, especialmente se o elemento pai não tiver um tamanho fixo ou previsível.
+
+Exemplo de Uso:
+
+html 
+<div class="parent">
+        <div class="child">
+        </div>
+</div>
+
+css
+.parent {
+    width: 500px; /*Largura fixa do pai*/
+    background-color: green;
+}
+
+.child {
+    width: 50%; /*50% da largura do elemento pai (250px)*/
+    background-color: pink;
+}
 

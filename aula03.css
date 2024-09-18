@@ -1,0 +1,99 @@
+
+
+
+
+header{
+    padding: 25px;
+    background-color: #3498db ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: white;
+}
+/*--------------------------------------------------------------------------------*/
+
+.section-01 {
+    margin: 30px;
+    padding: 50px;
+    background-color: rgba(232, 21, 21, 0.908);
+    border-radius: 12px;
+    
+
+  
+    
+
+}
+
+ .div-pai {
+    gap:35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+   
+}
+
+.div-pai div{
+    background-color: white;
+    width: 180px;
+    height: 40px;
+   text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.section-02 {
+    margin: 30px;
+    padding: 50px;
+    background-color: rgba(2, 158, 38, 0.908);
+    border-radius: 12px;
+    
+
+}
+
+.div-pai {
+    gap:35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+   
+}
+
+.div-pai div{
+    background-color: white;
+    width: 180px;
+    height: 40px;
+   text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.section-03 {
+    margin: 30px;
+    padding: 50px;
+    background-color: rgba(217, 228, 6, 0.908);
+    border-radius: 12px;
+    
+
+}
+
+.div-pai {
+    gap:35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+   
+}
+
+.div-pai div{
+    background-color: white;
+    width: 180px;
+    height: 40px;
+   text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+}

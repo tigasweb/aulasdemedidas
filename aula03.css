@@ -2,98 +2,82 @@
 
 
 
-header{
-    padding: 25px;
-    background-color: #3498db ;
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /*Distância entre linhas*/
+
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem; /*padding rem para consistência com o tamanho da fonte raiz*/
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 16px;
+    text-align: center;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.main-content {
+    padding: 2rem; /*espaço interno  da área principal*/
+    color: #3498db;
+    
+    
 }
 
-header h1 {
-    font-size: 3em;
+.section {
+    padding: 2em; /*padding em, relativo ao tamanho da fonte do pai*/
+    margin-bottom: 2em; /*Espaço abaixo de cada seção*/
+    border-radius: 8px;
+    position: relative; /**/
+    
+}
+
+.section-1 {
+    background-color: #e74c3c;
     color: white;
 }
-/*--------------------------------------------------------------------------------*/
 
-.section-01 {
-    margin: 30px;
-    padding: 50px;
-    background-color: rgba(232, 21, 21, 0.908);
-    border-radius: 12px;
-    
-
-  
-    
-
+.section-2 {
+    background-color: #2ecc71;
+    color: white;
 }
 
- .div-pai {
-    gap:35px;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-   
+
+.section-3 {
+    background-color: #d0df05;
+    color: white;
 }
 
-.div-pai div{
-    background-color: white;
-    width: 180px;
-    height: 40px;
-   text-align: center;
-    padding: 25px;
-    border-radius: 12px;
+
+.box {
+    background-color: #fff;
+    color: black;
+    padding: 2rem; /*padding aumentado para maior visibilidade*/
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem; /*Tamanho da fonte aumentado para maior legibilidade*/
+    box-sizing: border-box; /*Inclui padding e borda no cálculo da largura*/
 }
 
-.section-02 {
-    margin: 30px;
-    padding: 50px;
-    background-color: rgba(2, 158, 38, 0.908);
-    border-radius: 12px;
-    
-
+.box-1, .box-3, .box-4, .box-5, .box-6 {
+    width: calc(50% - 2rem); /*Largura das caixas ajustada para caber duas por linha com espaçamento*/
+    float: left; /*Trabalha com a distribuição dos elementos ...*/
 }
 
-.div-pai {
-    gap:35px;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-   
+.section::after {
+    content: ""; /*Adicionar um elemento invisivel após o conteúdo da  seção*/
+    display: table; /*Faz com que o elemento invisivel se comporte como um bolco, forçamdo o contêiner  a incluir elemento flutuante*/ 
+    clear: both; /*Garante que o contêiner "limpe" os elementos flutuantes, evitando problemas de layout*/
 }
 
-.div-pai div{
-    background-color: white;
-    width: 180px;
-    height: 40px;
-   text-align: center;
-    padding: 25px;
-    border-radius: 12px;
-}
+/*responsividade*/
 
-.section-03 {
-    margin: 30px;
-    padding: 50px;
-    background-color: rgba(217, 228, 6, 0.908);
-    border-radius: 12px;
-    
-
-}
-
-.div-pai {
-    gap:35px;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-   
-}
-
-.div-pai div{
-    background-color: white;
-    width: 180px;
-    height: 40px;
-   text-align: center;
-    padding: 25px;
-    border-radius: 12px;
+/*Ajuste para Telas grandes (Larguras acima de 1200px)*/
+@media (min-width: 1200px) {
+    .box {
+        width: calc(33.333% - 2rem); /*Largura de 33.333% para três caixas por linha*/
+    }
 }

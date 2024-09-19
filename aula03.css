@@ -30,7 +30,7 @@ header {
     padding: 2em; /*padding em, relativo ao tamanho da fonte do pai*/
     margin-bottom: 2em; /*Espaço abaixo de cada seção*/
     border-radius: 8px;
-    position: relative; /**/
+    position: relative; /*O elemento é posicionado em relação à sua pisição original. Você*/
     
 }
 
@@ -62,15 +62,32 @@ header {
     box-sizing: border-box; /*Inclui padding e borda no cálculo da largura*/
 }
 
-.box-1, .box-3, .box-4, .box-5, .box-6 {
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
     width: calc(50% - 2rem); /*Largura das caixas ajustada para caber duas por linha com espaçamento*/
-    float: left; /*Trabalha com a distribuição dos elementos ...*/
+    float: left; /*É como se você estivesse empurrando as caixas para o lado esquerdo da mesa. isso faz com que,  quando você coloca uma nova caixa, ela "desça" para a próxima linha, mantendo as outras caixas alinhadas */
 }
 
 .section::after {
-    content: ""; /*Adicionar um elemento invisivel após o conteúdo da  seção*/
-    display: table; /*Faz com que o elemento invisivel se comporte como um bolco, forçamdo o contêiner  a incluir elemento flutuante*/ 
-    clear: both; /*Garante que o contêiner "limpe" os elementos flutuantes, evitando problemas de layout*/
+    content: ""; /*Adicionar um elemento invisivel após o conteúdo da  seção
+    isso cria um "espaço vazio" invisivel na sua festa. É como se lococasse uma pequena bandeja vazia na mesa, que ninguem vê, mas que ajuda a manter tudo organizado*/
+
+     /* Essa propriedades é necessaria para criar um pseudo-elemento invisivel que ajuda a controlar o layout. Sem ela, o containêr (as caixas de frutas), o que pode causar problemas na exibição. */
+     
+
+
+    display: table; /*Faz com que o elemento invisivel se comporte como um bloco, forçando o containêr a incluir elementos flutuantes
+    
+      Esse "espaço vazio" se comporta como uma parte da mesa. Ele age como um bloco, o que significa que  ajuda a agrupar tudo que está na mesa, fazendo com que os itens ao redor se organizem melhor.
+      
+      Ao fazer o elemento invisivel se cpmportar como uma tabela, você garante que ele atue como um bloco que mantém a estrutura do containêr. Isso ajuda a forçar o contêiner a "abraçar" todos os elementos flutuantes, evitando que eles "saiam" do espaço que deveriam ocupar 
+    */ 
+
+    clear: both; /*Garante que o contêiner "limpe" os elementos flutuantes, evitando problemas de layout 
+    
+    Isso garante que, após as caixas se frutas (ou outros itens) na mesa, nada mais flutue ao lado. É como se você estivesse dizendo: "Depois da bandeja vazia, nada pode ficar ao lado; tudo deve ficar em uma nova linha. Isso evita que a mesa fique desorganizada e os itens se sobreponham"
+    
+    
+    */
 }
 
 /*responsividade*/
@@ -80,4 +97,17 @@ header {
     .box {
         width: calc(33.333% - 2rem); /*Largura de 33.333% para três caixas por linha*/
     }
+
+    
 }
+
+/*ajuste para telas pequenas (largura até 768px)*/
+
+@media (max-width: 768px) {
+     .box {
+        width: calc();
+     }
+
+}
+     
+    

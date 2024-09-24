@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*O box-sizing garante que o padding seja incluido no cálculo da largura, evitando que o conteúdo ultrapasse a tela.*/
+}
+
+html{ /*Aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa página*/
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 10vh; /*preenchimento*/
+    background-color: bisque; /*cor de fundo*/
+    width: 100vw; /*definimos a largura total do HEADER*/
+}
+
+.section-01 {
+    background-color: rgb(233, 218, 0); /*Definição cor de fundo*/
+    padding: 20vh; /*preenchimento*/
+    display: flex; /*tornando a section flex(lado a lado)*/
+    justify-content: space-between;/*tornando a section flex*/
+    align-items: center; /*alinhando os itens ao centro*/
+    width: 100vw;/*Definindo a largura para 100%*/
+
+}
+
+/* section:last-child { */
+    /* background-color: black;cor de fundo */
+    /* padding: 30vh ;preenchimento */
+    /* width: 100vw; Definindo a largura para 100% */
+     
+ /* }  */
+
+.div-01 p {
+    font-size: 2em;
+    color: white;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.section-02 {
+    background-color: rgb(151, 151, 151); /*Definição cor de fundo*/
+    padding: 20vh; /*preenchimento*/
+    display: flex; /*tornando a section flex(lado a lado)*/
+    justify-content: space-between;/*tornando a section flex*/
+    align-items: center; /*alinhando os itens ao centro*/
+    width: 100vw;/*Definindo a largura para 100%*/
+
+
+}
+
+.div-03 img {
+    margin: 5rem;
+    width: 30rem;
+}
+
+.div-04 p {
+    font-size: 2em ;
+    color: white;
+    margin: 1.2em;
+}
+
+
+footer {
+    padding: 10vh;
+    background-color: bisque;
+    width: 100vw;
+}
+
+/*estilização para tamanhios se específicos ou seja, para uma largura máxima de 766px*/
+@media (max-width:766px) {
+    .section-01{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div img {
+        margin: 0 auto; /*aqui estou chamando a img e defindo a mesma fique com os valores superior inferior em 0 e as laterias sejam auto*/
+        width: 20rem;/*Largura da imagem */
+      
+    }
+
+    div p {
+        font-size: 25px;/*Ajuste o tamanho da fonte para se adequar á tela menor*/
+        line-height: 1.5;/*Espaçamento entre linhas para melhor legibilidade*/
+        width: 100%;/*Certifique-se de ocupar toda a largura*/
+        margin: 1rem; /**/
+    }
+
+
+    .section-02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}

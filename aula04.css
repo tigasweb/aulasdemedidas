@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    padding: 75px;
+    background-color: rgb(168, 113, 45);
+}
+
+.section-01 {
+    padding: 180px;
+    background-color: rgb(0, 243, 77);
+}
+
+.section-02 {
+    padding: 180px;
+    background-color: blue;
+}
+
+footer {
+    padding: 75px;
+    background-color: rgb(5, 179, 179);
+}
+
+
+@media (max-width:480px) {
+     header {
+        background-color: rgb(255, 0, 255);
+
+     }
+
+     .section {
+        background-color: blue;
+     }
+   
+     
+}
+
+
+
+/*Estilos para tablets*/
+
+@media (min-width:600px) and (max-width:1024px) {
+   
+    .section-01{
+        color: white;
+        background-color: black;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*min-width > largura minima. o elemento não pode ser menor que esse valor.
+
+  max-width > largura maxima. o elemento não pode ser maior que valor*/

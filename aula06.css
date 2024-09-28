@@ -45,7 +45,7 @@ header button {
     background-color:aliceblue ;
     border-radius: 1rem;
     padding: 1.3rem;
-    color: beige;
+    color: rgb(98, 4, 250);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,5 +53,139 @@ header button {
 }
 
 .section-01 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; 
+      background-color: rgb(146, 238, 241);
+      width: 100%;
+      padding: min(20vh, 6rem);
 
 }
+
+.section-02 {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: rgb(0, 66, 68);
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+
+}
+
+.div-01 p{
+    font-size: 2em;
+    margin: 1.2em;
+    color:rgb(0, 0, 0);
+
+ }
+
+ .div-03 p{
+    font-size: 2em;
+    margin: 1.2em;
+    color:rgb(255, 255, 255);
+
+ }
+
+ .div-02 img {
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;/*Garantindo que a imagem se comporte como um bloco*/
+ }
+
+ footer {
+    background-color:#001848;
+    width: 100%;
+    padding: min(10vh, 4rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+
+ }
+
+ footer i {
+    color: azure;
+    font-size: 6em;
+
+ }
+
+ footer h2 {
+    font-size: 2em;
+    margin: 1.2em;
+    color:rgb(255, 255, 255);
+
+     
+ }
+
+
+ @media(max-width: 830px) {
+    header i {
+        font-size: 4.1rem;
+    }
+
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section-01{
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .div-01 p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        margin: 2em;
+        padding: 2rem;
+    }
+
+    .div-03 p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        margin: 2em;
+        padding: 2rem;
+    }
+
+    .div-02 img {
+        width: 20rem;
+        margin: 5 auto;
+    }
+
+    .section-02 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    footer i{
+        font-size: 4.2rem;
+
+    }
+
+    footer h2 {
+        font-size: 1.1rem ;
+        line-height:1.5rem ;
+        text-align:left;
+        width: 100%;
+        margin: 2em ;
+        padding:2rem ;
+       
+    }
+ }

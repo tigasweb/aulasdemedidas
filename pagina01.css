@@ -36,7 +36,7 @@ header {
 
 header i {
     color: azure;
-    font-size: 6em;
+    font-size: 3em;
 }
 
 header button {
@@ -95,11 +95,19 @@ header button {
  }
  /*************************************************************************************************************/
   .section-03 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: rgb(0, 10, 10);
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+
     
   }  
 
 
- .conteúdo {
+ .div-pai{
     display: flex; /* Cria um contêiner flexível */
     position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este contêiner */
     justify-content: center; /* Centraliza os itens horizontalmente */
@@ -109,26 +117,27 @@ header button {
     z-index: 1; /* Define a ordem de sobreposição do contêiner */
 }
 
+.div-pai {
+    display: flex;
+    align-items: center;
+}
 
 
-.conteúdo .div-caixa {
+
+.div-caixa {
     position: relative; /* Permite que elementos filhos sejam posicionados em relação ao cartão */
     width: 200px; /* Define o tamanho do cartão */
     height: 400px; /*Altura do Cartão*/
     margin: 30px;/* Adiciona espaço ao redor de cada cartão */
     box-shadow: 20px 20px 50px rgba(22, 12, 41, 0.699); /* Cria uma sombra ao redor do cartão */
     border-radius: 15px;  /* Arredonda os cantos do cartão */
-    background: rgba(223, 167, 223, 0.288); /* Define uma cor de fundo com transparência */
-    justify-content: center; /*Justificando o conteúdo ao centro*/
-    align-items: center; /*Alinhando os itens ao centro*/
-    border-top: 1px solid rgba(255, 255, 255, 0.5); /*Borda superior*/
-    border-left: 1px solid rgba(255, 255, 255, 0.5);/*Borda esquerda*/
+    background: rgba(255, 255, 255, 0.438); /* Define uma cor de fundo com transparência */
 }
 
 .conteúdo {
     padding: 20px; /* Adiciona espaço interno ao redor do conteúdo */
     text-align: center; /* Centraliza o texto dentro do elemento */
-    transform: translateY(50px); /* Move o conteúdo 50px para baixo inicialmente */
+    transform: translateY(55px); /* Move o conteúdo 50px para baixo inicialmente */
     opacity: 0.2; /* Define a transparência inicial como 20% */
     transition: 0.5s; /* Cria uma transição suave para mudanças nas propriedades */
 }
@@ -143,8 +152,9 @@ header button {
     position: absolute; /* Posiciona o título de forma absoluta em relação ao contêiner pai */
     right: 30px; /* Alinha o título 30px à direita do contêiner */
     font-size: 5rem; /* Define um tamanho de fonte grande para o título */
-    color: rgba(128, 128, 128, 0.5); /* Define uma cor cinza com 50% de opacidade */
+    color: rgba(0, 0, 0, 0.5); /* Define uma cor cinza com 50% de opacidade */
     pointer-events: none; /* Desativa eventos de ponteiro, tornando o elemento não clicável */
+    margin-bottom: 205px;
 }
 .conteúdo h3 {
     font-size: 1.8em; /* Define um tamanho de fonte para o subtítulo */
@@ -173,7 +183,7 @@ header button {
 
 
  footer {
-    background-color:#03112c;
+    background-color:#010816;
     width: 100%;
     padding: min(10vh, 4rem);
     display: flex;
@@ -186,7 +196,7 @@ header button {
 
  footer i {
     color: azure;
-    font-size: 6em;
+    font-size: 3em;
 
  }
 
